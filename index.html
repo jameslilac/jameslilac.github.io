@@ -1,31 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1><a href="/">My Blog</a></h1>
-            <nav>
-                <a href="/about.html">About</a>
-            </nav>
-        </header>
+---
+layout: default
+---
 
-        <main>
-            <article class="post">
-                <div class="date">Jan 07, 2026</div>
-                <h2><a href="/posts/test-article.html">test title</a></h2>
-                <p class="description">test body</p>
-            </article>
-        </main>
+<div class="home">
 
-        <footer>
-            <p>My Blog</p>
-        </footer>
-    </div>
-</body>
-</html>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <p>{{ post.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

@@ -1,0 +1,17 @@
+# Site settings
+title: My Blog
+email:
+description: "Musings of a Computer Scientist."
+baseurl: ""
+url: "https://jameslilac.github.io"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
