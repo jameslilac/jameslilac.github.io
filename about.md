@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-This is a minimal blog built with Jekyll, inspired by clean, simple design principles.
+Learning to use machine learning for decisions and forecasting. 
