@@ -1,7 +1,3 @@
-# My Blog
-
-This is my blog, built with Jekyll. A minimal, clean design for writing posts in Markdown.
-
 ## Writing Posts
 
 Posts are written in Markdown and stored in the `_posts/` directory. Each post filename should follow the format: `YYYY-MM-DD-title.md`
