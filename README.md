@@ -14,12 +14,7 @@ date: 2026-01-07
 Your post content in Markdown format goes here.
 ```
 
-## Local Development
+## Formatting
+Good resource is [StackEdit](stackedit.io)
 
-To run locally:
 
-```bash
-bundle exec jekyll serve
-```
-
-Then visit `http://localhost:4000`
