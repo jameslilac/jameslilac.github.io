@@ -4,12 +4,12 @@ title: "RL's Scaling Edge: On-Policy Learning and Negative Gradients"
 date: 2026-01-17
 ---
 
-Recent claims from Moonshot AI's leadership suggest that Reinforcement Learning (RL) may offer a more efficient path to scaling Large Language Models (LLMs) compared to traditional pre-training [3]. This efficiency is attributed to two core concepts: **on-policy learning** and the use of **negative gradients**.
+In a recent interview, Kimi's founder Zhang Zhilin suggested that Reinforcement Learning (RL) offers more efficient scaling for Large Language Models (LLMs) compared to traditional pre-training [3]. This efficiency is attributed to two core concepts: **on-policy learning** and the use of **negative gradients**.
 
 ## 1. The Power of On-Policy Learning
 
 *   **Pre-training as an Off-Policy Task**
-    - Standard pre-training is fundamentally an "off-policy" process where the model learns from a massive, static dataset collected beforehand.
+    - Standard pre-training is an "off-policy" process where the model learns from a massive, static dataset collected beforehand.
     - This data's distribution is fixed and doesn't change, regardless of the model's performance or evolving capabilities.
     - The model has no mechanism to adapt to the distribution of text it will actually generate during inference.
 
@@ -45,9 +45,9 @@ Recent claims from Moonshot AI's leadership suggest that Reinforcement Learning 
 
 ## The Unbeaten Strength of Pre-training
 
-*   **Knowledge Acquisition Remains King**
-    - Despite RL's efficiency in refining behavior and improving reasoning, pre-training remains the undisputed champion for acquiring a broad base of factual knowledge.
-    - The sheer volume and diversity of data in pre-training corpora (often trillions of tokens) are what give LLMs their extensive understanding of the world, from scientific facts to cultural knowledge.
+*   **Knowledge Acquisition Remains Superior**
+    - Despite RL's efficiency in refining behavior and improving reasoning, pre-training remains superior for acquiring a broad base of factual knowledge.
+    - The sheer volume and diversity of data in pre-training corpora (often trillions of tokens) are what give LLMs their extensive understanding of the world.
     - RL cannot replace this knowledge acquisition phase—it can only refine how that knowledge is used.
 
 *   **RL Needs a Foundation to Build Upon**
@@ -62,5 +62,5 @@ Recent claims from Moonshot AI's leadership suggest that Reinforcement Learning 
 
 1.  Zhu, X., et al. (2025). [The Surprising Effectiveness of Negative Reinforcement in LLM Reasoning](https://arxiv.org/abs/2506.01347). arXiv:2506.01347.
 2.  Zhang, W., et al. (2025). [On-policy RL meets Off-policy Experts: Harmonizing Supervised Fine-tuning and Reinforcement Learning via Dynamic Weighting](https://arxiv.org/abs/2508.11408). arXiv:2508.11408.
-3.  Khatri, D., et al. (2025). [The Art of Scaling Reinforcement Learning Compute for LLMs](https://arxiv.org/abs/2510.13786). arXiv:2510.13786.
+3.  Zhang Zhilin interview (2025). [Kimi Founder Zhang Zhilin: Agentic LLMs](https://www.youtube.com/watch?v=91fmhAnECVc).
 4.  Seldon. (2021). [What is Covariate Shift?](https://www.seldon.io/what-is-covariate-shift/)
