@@ -112,8 +112,40 @@ body {
     margin-bottom: 15px;
 }
 
+/* CHANGE 1: Add gray line under H2 headers (##) */
+.post-content h2 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d0d7de;
+}
+
 .post-content p {
     margin-bottom: 15px;
+}
+
+/* CHANGE 2: Better bullet indentation - align bullets with text */
+.post-content ul,
+.post-content ol {
+    margin-left: 0;
+    padding-left: 2em;
+    margin-bottom: 16px;
+}
+
+.post-content ul ul,
+.post-content ol ul,
+.post-content ul ol,
+.post-content ol ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.post-content li {
+    margin-bottom: 8px;
+}
+
+/* CHANGE 3: Add line break after bullet lists */
+.post-content ul,
+.post-content ol {
+    margin-bottom: 24px;
 }
 
 .post-content code {
